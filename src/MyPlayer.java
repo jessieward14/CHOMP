@@ -14,9 +14,31 @@ public class MyPlayer {
             for(int b=0;b<4;b++){
                 for(int c=0;c<4;c++){
                     if(a>=b && b>=c){
+                        System.out.println("Board");
                         System.out.println(a + " "+b +" " + c);
                         System.out.println("resulting boards");
-                        for(int p=0;p)
+                        for(int p=2;p>-1; p--){
+
+                            System.out.println(a + " "+b +" " + p);
+
+                        }
+                        for(int p=2;p>-1; p--){
+                            if(c>p){
+                                c=p;
+
+                            }
+                            if(p>a){
+                                p=a;
+                            }
+
+                            System.out.println(a + " "+p +" " + c);
+
+
+
+                        }
+                        for(int p=2;p>-1;p--){
+
+                        }
 
                     }
                    // System.out.println(a + " "+b +" " + c);
